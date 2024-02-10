@@ -2,35 +2,43 @@
     "Files":  [
                   {
                       "fileName":  "test",
-                      "dateOfCreation":  "20240209",
+                      "dateOfCreation":  "20240210",
                       "fileType":  "DOT",
                       "version":  0,
                       "extension":  ".txt",
-                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-test-DOT-v0.txt"
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240210-test-DOT-v0.txt"
+                  },
+                  {
+                      "fileName":  "test_",
+                      "dateOfCreation":  "20240210",
+                      "fileType":  "DOT",
+                      "version":  0,
+                      "extension":  ".txt",
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240210-test_-DOT-v0.txt"
                   },
                   {
                       "fileName":  "test",
-                      "dateOfCreation":  "20240209",
+                      "dateOfCreation":  "20240210",
                       "fileType":  "DOT",
                       "version":  1,
                       "extension":  ".txt",
-                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-test-DOT-v1.txt"
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240210-test-DOT-v1.txt"
                   },
                   {
                       "fileName":  "test",
-                      "dateOfCreation":  "20240209",
+                      "dateOfCreation":  "20240210",
                       "fileType":  "DOT",
                       "version":  2,
                       "extension":  ".txt",
-                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-test-DOT-v2.txt"
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240210-test-DOT-v2.txt"
                   },
                   {
-                      "fileName":  "words",
-                      "dateOfCreation":  "20240209",
+                      "fileName":  "test",
+                      "dateOfCreation":  "20240210",
                       "fileType":  "DOT",
-                      "version":  0,
+                      "version":  3,
                       "extension":  ".txt",
-                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-words-DOT-v0.txt"
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240210-test-DOT-v3.txt"
                   }
               ]
 }

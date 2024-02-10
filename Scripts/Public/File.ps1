@@ -22,7 +22,8 @@ class File {
      [void] FormatFileName(){
           $withinBrackets = $false
           $result = ""
-          for($i=0; $i -lt $this.fileName.Length-1;$i++){
+          Write-Host $this.fileName
+          for($i=0; $i -lt $this.fileName.Length;$i++){
                if($this.fileName[$i] -eq " "){
                     $result += "_" 
                }
@@ -35,17 +36,14 @@ class File {
                if($this.fileName[$i] -eq ")"){
                     $withinBrackets = $false
                }
-
-          }
-          if($result[$result.Length-1] -eq "_"){
-               $result = $result.Substring(0, $result.Length - 1)
           }
           
+          if($result[$result.Length-1] -eq "_"){
+               $result = $result.Substring(0, $result.Length-1)
+          }
+          
+
           $this.fileName = $result
           
      }
 }
-$newFile = [File]::new("words(1) hello (1)(2)", "20230209", "DOT", 0, ".txt")
-$newFile.FormatFileName()
-
-Write-Host $newFile.fileName
