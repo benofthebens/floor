@@ -1,5 +1,36 @@
 {
     "Files":  [
-                  "C:\\Users\\benja\\Desktop\\Test\\test0-DOT-2024_02_07.txt"
+                  {
+                      "fileName":  "test",
+                      "dateOfCreation":  "20240209",
+                      "fileType":  "DOT",
+                      "version":  0,
+                      "extension":  ".txt",
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-test-DOT-v0.txt"
+                  },
+                  {
+                      "fileName":  "test",
+                      "dateOfCreation":  "20240209",
+                      "fileType":  "DOT",
+                      "version":  1,
+                      "extension":  ".txt",
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-test-DOT-v1.txt"
+                  },
+                  {
+                      "fileName":  "test",
+                      "dateOfCreation":  "20240209",
+                      "fileType":  "DOT",
+                      "version":  2,
+                      "extension":  ".txt",
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-test-DOT-v2.txt"
+                  },
+                  {
+                      "fileName":  "words",
+                      "dateOfCreation":  "20240209",
+                      "fileType":  "DOT",
+                      "version":  0,
+                      "extension":  ".txt",
+                      "path":  "C:\\Users\\benja\\Desktop\\Test\\20240209-words-DOT-v0.txt"
+                  }
               ]
 }

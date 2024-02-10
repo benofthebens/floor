@@ -4,6 +4,7 @@ class File {
      [string] $fileType
      [int] $version
      [string] $extension
+     [string] $path
      
      File([string] $_filename, [string] $_dateOfCreation, [string] $_fileType, [int] $_version,[string] $_extension){
          $this.fileName = $_filename
@@ -13,9 +14,38 @@ class File {
          $this.extension = $_extension
      }
      [string] ToString() {
-          return "$($this.fileName)$($this.version)-$($this.fileType)-$($this.dateOfCreation)$($this.extension)"
+          return "$($this.dateOfCreation)-$($this.fileName)-$($this.fileType)-v$($this.version)$($this.extension)"
      }
      [void] IncrementVersion(){
           $this.version = $this.version + 1
      }
+     [void] FormatFileName(){
+          $withinBrackets = $false
+          $result = ""
+          for($i=0; $i -lt $this.fileName.Length-1;$i++){
+               if($this.fileName[$i] -eq " "){
+                    $result += "_" 
+               }
+               if($this.fileName[$i] -eq "("){
+                    $withinBrackets = $true
+               }
+               if(-not $withinBrackets -and -not ($this.fileName[$i] -eq " ")){
+                    $result += $this.fileName[$i]
+               }
+               if($this.fileName[$i] -eq ")"){
+                    $withinBrackets = $false
+               }
+
+          }
+          if($result[$result.Length-1] -eq "_"){
+               $result = $result.Substring(0, $result.Length - 1)
+          }
+          
+          $this.fileName = $result
+          
+     }
 }
+$newFile = [File]::new("words(1) hello (1)(2)", "20230209", "DOT", 0, ".txt")
+$newFile.FormatFileName()
+
+Write-Host $newFile.fileName
