@@ -41,8 +41,6 @@ class File {
           if($result[$result.Length-1] -eq "_"){
                $result = $result.Substring(0, $result.Length-1)
           }
-          
-
           $this.fileName = $result
           
      }
